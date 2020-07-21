@@ -1,0 +1,56 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+}
+p::first-line{
+    color: olive;
+    font-variant: small-caps;
+    border: 2px solid green; 
+    border-radius: 8px;
+    border-style: outset;
+}
+p {
+    color: blue;
+    text-align: center;
+    border-left: 5px solid blue;
+}
+#p1 {
+    color:red;
+    text-align: centre;
+    background-color: purple;
+    border-bottom: 3px solid red; 
+    border-style: double;
+}
+#p2 {
+    color:palevioletred;
+    text-align: right;
+    font-size: 80px;
+    background-image: url('https://d18lkz4dllo6v2.cloudfront.net/cumulus_uploads/entry/20978/simpsons%20illustrative.png?pw=1200');
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: scroll;
+}
+#p3 {
+    color:green;
+    text-align: left;
+    background-color: peru;
+    border: 5px solid red;
+}
+h1::before{
+    content: url(https://i.pinimg.com/originals/fd/e2/4b/fde24b89a56e6bbf894cb01699a1728c.gif);
+}
+img  {
+    /* transform: rotate(20deg) rotateZ(90deg); */
+}
+.center {
+    text-align: center;
+    color: purple;
+    font-size: large;
+  }
+  
+  /* *{
+    width: 250px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 10px;
+    overflow-y: scroll;
+  } */
