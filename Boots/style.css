@@ -46,7 +46,35 @@ img  {
     color: purple;
     font-size: large;
   }
+
+  // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+  @include media-breakpoint-up(sm) { ... }
+  @include media-breakpoint-up(md) { ... }
+  @include media-breakpoint-up(lg) { ... }
+  @include media-breakpoint-up(xl) { ... }
   
+  // Example: Hide starting at `min-width: 0`, and then show at the `sm` breakpoint
+  .custom-class {
+    display: none;
+  }
+  @include media-breakpoint-up(sm) {
+    .custom-class {
+      display: block;
+    }
+  } 
+  /* .themed-grid-col {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(86, 61, 124, .15);
+    border: 1px solid rgba(86, 61, 124, .2);
+  } */
+  /* .themed-container {
+    padding: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    background-color: rgba(0, 123, 255, .15);
+    border: 1px solid rgba(0, 123, 255, .2);
+  } */
   /* *{
     width: 250px;
     padding: 10px;
@@ -54,3 +82,27 @@ img  {
     margin: 10px;
     overflow-y: scroll;
   } */
+  /* .box {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 123, 255, .15);
+    border: 1px solid rgba(0, 123, 255, .2);
+    flex: 1 1 auto;
+} */
+.box {
+  display: flex;
+  background-color: rgba(0, 123, 255, .15);
+    border: 1px solid rgba(0, 123, 255, .2);
+}
+
+.one {
+  flex: 1 1 auto;
+}
+
+.two {
+  flex: 1 1 auto;
+}
+
+.three {
+  flex: 1 1 auto;
+}
